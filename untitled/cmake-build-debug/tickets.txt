@@ -1,0 +1,12 @@
+123456,Estoy probando el ticket,cerrado,2,11997049-0,Rinconada
+1,que bueno
+0,voy a cerrar el ticket
+223344, no hay internet,resuelto,5,3558232-0,Saturn
+0,Solo le pasa a usted?
+1,si, solo a mi
+0,reinicie el router
+1,vuelvo a tener internet
+0,dejare el ticket resuelto por si vuelve a presentar inconvenientes
+23415,Caida del sistema,abierto,2,12672320-2,Amarilla
+1,el ticket fue generado un sábado y solo trabajamos de lunes a viernes
+0,esperare

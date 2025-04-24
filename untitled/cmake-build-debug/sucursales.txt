@@ -1,0 +1,3 @@
+Rinconada,30,Antofagasta
+Amarilla,7,Santiago
+Saturn,54,Iquique
