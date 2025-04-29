@@ -9,18 +9,61 @@
 #include <stack>
 #include <fstream>
 #include <sstream>
+#include <stack>
+#include <queue>
+
 
 // Nodo para la lista generalizada de sucursales
-class Nodo {
-public:
-    int tag; // 0: átomo, 1: sublista, 2: contador de referencias
-    std::string data; // Usado si tag == 0
-    Nodo* dlink; // Usado si tag == 1
-    int ref; // Usado si tag == 2
-    Nodo* link; // Siguiente nodo en el mismo nivel
-
-    Nodo(int t) : tag(t), dlink(nullptr), ref(0), link(nullptr) {}
-    Nodo(int t, const std::string& d) : tag(t), data(d), dlink(nullptr), ref(0), link(nullptr) {}
-};
 
 //lista generalizada = (nombre sucursal,(cantidad maxima clientes), ubicacion)
+
+
+//almacenamiento de clientes (lista circular doblemente enlazada)
+
+
+//organizacion de tickets (cola queue)
+int colaTickets(){//FIFO
+  int tickets = 5;
+  std::queue<int>* q = new std::queue<int>();
+  for(int i = 0; i < tickets; i++){
+    std::cout << "Insertando"  << i << std::endl;
+    q->push(i);
+   }
+   std::cout << std::endl;
+   int dato;
+   for(int i = 0; i < 5; i++){
+     dato = q->top();
+     std::cout << "Eliminando" << dato << std::endl;
+     q->pop();
+   }
+   std::cout << std::endl;
+   delete q;
+   return 0;
+}
+
+//stack para cada comentario de ticker
+int pilaComentarios(){ //LIFO
+    int N = 5;
+    std::stack<int>* s = new std::stack<int>();
+    for(int i = 0; i < N; i++){
+      std::cout << "insertando: " << i << std::endl;
+      s->push(i); //inserta un nodo al final de la cola
+    }
+    std::cout << std::endl;
+    int dato;
+    for (int i = 0; i < N; i++){
+      dato = s->top();//retorna al primer nodo
+      std::cout << "Eliminando "<< dato << " " << std::endl;
+      s->pop(); //elimina y retorna al nodo de al frente
+      }
+      std::cout << std::endl;
+      delete s;
+      return 0;
+
+}
+
+
+
+
+
+
