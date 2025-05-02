@@ -61,6 +61,72 @@ build CMakeFiles/untitled.dir/sistemaSucursal.cpp.obj: CXX_COMPILER__untitled_un
   OBJECT_DIR = CMakeFiles\untitled.dir
   OBJECT_FILE_DIR = CMakeFiles\untitled.dir
 
+build CMakeFiles/untitled.dir/Sucursal.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/Romina/CLionProjects/untitled/Sucursal.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\Sucursal.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled.dir
+
+build CMakeFiles/untitled.dir/Cliente.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/Romina/CLionProjects/untitled/Cliente.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\Cliente.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled.dir
+
+build CMakeFiles/untitled.dir/Ticket.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/Romina/CLionProjects/untitled/Ticket.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\Ticket.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled.dir
+
+build CMakeFiles/untitled.dir/Comentario.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/Romina/CLionProjects/untitled/Comentario.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\Comentario.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled.dir
+
+build CMakeFiles/untitled.dir/StackComentario.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/Romina/CLionProjects/untitled/StackComentario.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\StackComentario.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled.dir
+
+build CMakeFiles/untitled.dir/NodoTicket.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/Romina/CLionProjects/untitled/NodoTicket.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\NodoTicket.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled.dir
+
+build CMakeFiles/untitled.dir/Cola.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/Romina/CLionProjects/untitled/Cola.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\Cola.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled.dir
+
+build CMakeFiles/untitled.dir/NodoDobleCliente.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/Romina/CLionProjects/untitled/NodoDobleCliente.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\NodoDobleCliente.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled.dir
+
+build CMakeFiles/untitled.dir/ListaCliente.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/Romina/CLionProjects/untitled/ListaCliente.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\ListaCliente.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled.dir
+
+build CMakeFiles/untitled.dir/NodoListaEnlazada.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/Romina/CLionProjects/untitled/NodoListaEnlazada.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\NodoListaEnlazada.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled.dir
+
+build CMakeFiles/untitled.dir/ListaEnlazada.cpp.obj: CXX_COMPILER__untitled_unscanned_Debug C$:/Users/Romina/CLionProjects/untitled/ListaEnlazada.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles\untitled.dir\ListaEnlazada.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles\untitled.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target untitled
@@ -69,7 +135,7 @@ build CMakeFiles/untitled.dir/sistemaSucursal.cpp.obj: CXX_COMPILER__untitled_un
 #############################################
 # Link the executable untitled.exe
 
-build untitled.exe: CXX_EXECUTABLE_LINKER__untitled_Debug CMakeFiles/untitled.dir/main.cpp.obj CMakeFiles/untitled.dir/sistemaSucursal.cpp.obj
+build untitled.exe: CXX_EXECUTABLE_LINKER__untitled_Debug CMakeFiles/untitled.dir/main.cpp.obj CMakeFiles/untitled.dir/sistemaSucursal.cpp.obj CMakeFiles/untitled.dir/Sucursal.cpp.obj CMakeFiles/untitled.dir/Cliente.cpp.obj CMakeFiles/untitled.dir/Ticket.cpp.obj CMakeFiles/untitled.dir/Comentario.cpp.obj CMakeFiles/untitled.dir/StackComentario.cpp.obj CMakeFiles/untitled.dir/NodoTicket.cpp.obj CMakeFiles/untitled.dir/Cola.cpp.obj CMakeFiles/untitled.dir/NodoDobleCliente.cpp.obj CMakeFiles/untitled.dir/ListaCliente.cpp.obj CMakeFiles/untitled.dir/NodoListaEnlazada.cpp.obj CMakeFiles/untitled.dir/ListaEnlazada.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\untitled.dir

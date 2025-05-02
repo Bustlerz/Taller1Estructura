@@ -3,7 +3,7 @@
 #include <fstream>
 #include <string.h>
 #include <cstdlib>
-#include "sistemaSucursal.h"
+#include "sistema.h"
 using namespace std;
 
 //app es abrir archivo en modo de escritura
@@ -14,13 +14,14 @@ void lecturaTickets();
 void lecturaPrincipal();
 void menuPrincipal();
 void menuSucursal();
+void menuCliente();
 
 
 int main() {
     lecturaPrincipal();
     menuPrincipal();
 
-    sistemaSucursal sistema;
+    sistema sistema;
 
     // Agregar sucursales
 
@@ -154,4 +155,14 @@ void menuSucursal() {
 
         }
     }
+}
+
+void menuCliente() {
+    int opcion = 0;
+    string nombreClientes;
+    cout << "Menu Clientes" << endl;
+    cout << "1-. Agregar cliente" << endl;
+    cout << "2-. Listar clientes" << endl;
+    cout << "3-. Eliminar cliente" << endl;
+    cout << "4-. Volver" << endl;
 }

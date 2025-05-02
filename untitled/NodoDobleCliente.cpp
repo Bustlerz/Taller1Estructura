@@ -1,49 +1,35 @@
 //
-// Created by Romina on 19-04-2025.
+// Created by Romina on 01-05-2025.
 //
 
+#include "NodoDobleCliente.h"
 #include <iostream>
 #include <string>
-#include <map>
-#include <queue>
-#include <stack>
-#include <fstream>
-#include <sstream>
 
-#include <iostream>
-#include <string>
-#include <map>
-#include <queue>
-#include <stack>
-#include <fstream>
-#include <sstream>
+#include "Cliente.h"
+using namespace std;
+
 
 //variables
-std::pmr::string buscarDatos;
-std::pmr::string datoBuscar = nullptr;
+string buscarDatos, datoBuscar = nullptr;
 
-
-// Nodo para la lista generalizada de sucursales
-
-//lista generalizada = (nombre sucursal,(cantidad maxima clientes), ubicacion)
-
-
-//almacenamiento de clientes (lista circular doblemente enlazada)
-
-struct nodo {
-    std::pmr::string dato;
-    nodo *siguiente, *anterior;
+template <typename string>
+struct nodo{
+    string dato; //contiene la informacion
+    nodo *siguiente, *anterior; //apunta al nodo siguiente y anterior
 };
 
-nodo *primero = nullptr, *ultimo = nullptr;
+nodo<string>* primero = nullptr;
+nodo<string>* ultimo = nullptr;
 
 //guarda y crea nodos de acuerdo a la informacion que entregara el usuario
 void ingresarDato();
 void mostrarDato();
 void buscarDato();
+void eliminarCliente();
 
 void ingresarDato() {
-    nodo *nuevoNodo = new nodo ();
+    nodo<string> *nuevoNodo = new nodo<string>;
     std::cout << "Ingrese cliente a agregar: ";
     std::cin >> nuevoNodo->dato; //guarda el dato al nuevo nodo creado
 
@@ -65,7 +51,7 @@ void ingresarDato() {
 
 //recorrido lista doble circular
 void mostrarDato() {
-    nodo *aux = new nodo ();
+    nodo<string>* aux = new nodo <string>;
     aux = primero;
     //si es asi es porque hay datos
     if (primero != nullptr) {
@@ -80,7 +66,7 @@ void mostrarDato() {
 }
 
 void buscarDato() {
-    nodo *buscar = new nodo ();
+    nodo<string> *buscar = new nodo<string> ();
     buscar = primero;
     std::cout << "Ingrese cliente a buscar";
     std::cin >> buscarDatos;
@@ -103,8 +89,8 @@ void buscarDato() {
 }
 
 void eliminarCliente() {
-    nodo *buscar = new nodo ();
-    nodo *nodoEliminar = new nodo ();
+    nodo <string>* buscar = new nodo <string>;
+    nodo<string>* nodoEliminar = new nodo<string>;
     buscar = primero;
     nodoEliminar = NULL;
 
@@ -146,48 +132,6 @@ void eliminarCliente() {
     }else {
         std::cout << "La lista esta vacia \n ";
     }
-
-}
-
-
-//organizacion de tickets (cola queue)
-int colaTickets(){//FIFO
-    int tickets = 5;
-    std::queue<int>* q = new std::queue<int>();
-    for(int i = 0; i < tickets; i++){
-        std::cout << "Insertando"  << i << std::endl;
-        q->push(i);
-    }
-    std::cout << std::endl;
-    int dato;
-    for(int i = 0; i < 5; i++){
-        dato = q->top();
-        std::cout << "Eliminando" << dato << std::endl;
-        q->pop();
-    }
-    std::cout << std::endl;
-    delete q;
-    return 0;
-}
-
-//stack para cada comentario de ticket
-int pilaComentarios(){ //LIFO
-    int N = 5;
-    std::stack<int>* s = new std::stack<int>();
-    for(int i = 0; i < N; i++){
-        std::cout << "insertando: " << i << std::endl;
-        s->push(i); //inserta un nodo al final de la cola
-    }
-    std::cout << std::endl;
-    int dato;
-    for (int i = 0; i < N; i++){
-        dato = s->top();//retorna al primer nodo
-        std::cout << "Eliminando "<< dato << " " << std::endl;
-        s->pop(); //elimina y retorna al nodo de al frente
-    }
-    std::cout << std::endl;
-    delete s;
-    return 0;
 
 }
 
